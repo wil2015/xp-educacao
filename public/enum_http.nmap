@@ -1,0 +1,15 @@
+# Nmap 7.80 scan initiated Wed Oct 19 17:34:25 2022 as: nmap -sV -oA enum_http --script http-enum.nse uol.com.br
+Nmap scan report for uol.com.br (200.147.35.149)
+Host is up (0.021s latency).
+Other addresses for uol.com.br (not scanned): 2804:49c:3102:401:ffff:ffff:ffff:36 2804:49c:3101:401:ffff:ffff:ffff:45
+rDNS record for 200.147.35.149: 200-147-35-149-149.static.uol.com.br
+Not shown: 998 filtered ports
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     F5 BIG-IP load balancer http proxy
+|_http-server-header: BigIP
+443/tcp open  ssl/http-proxy F5 BIG-IP load balancer http proxy
+|_http-server-header: BigIP
+Service Info: Device: load balancer
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 19 17:34:49 2022 -- 1 IP address (1 host up) scanned in 23.89 seconds

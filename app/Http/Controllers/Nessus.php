@@ -43,10 +43,12 @@ class Nessus extends Controller
         curl_close($ch);
         $sera = json_decode($result, true);
 
-
+        $ip = $sera["info"]["targets"];
         $qtd = count($sera['vulnerabilities']);
 
         for ($i=0 ; $i < $qtd ; $i++ ) {
+            $sera['vulnerabilities'][$i]['data_da_analise'] =  date("Y-m-d");
+            $sera['vulnerabilities'][$i]['endereco_ip'] = $ip;
             $params = [
                 'index' => 'nessus2',
                 'id'    => $sera['vulnerabilities'][$i]['vuln_index'],
@@ -58,8 +60,10 @@ class Nessus extends Controller
             } catch (MissingParameterException $e) { echo "que porra 222";
             } catch (ServerResponseException $e) { echo "que porra 333";
             }
+
             echo '<pre>';
-            var_export($response->asArray());
+        //    var_export($response->asArray());
+            var_export($sera['vulnerabilities'][$i]);
             echo '<pre>';
 
         }

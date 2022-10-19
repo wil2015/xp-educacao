@@ -1,0 +1,4 @@
+# Nmap 7.80 scan initiated Wed Oct 19 17:34:25 2022 as: nmap -sV -oA enum_http --script http-enum.nse uol.com.br
+Host: 200.147.35.149 (200-147-35-149-149.static.uol.com.br)	Status: Up
+Host: 200.147.35.149 (200-147-35-149-149.static.uol.com.br)	Ports: 80/open/tcp//http-proxy//F5 BIG-IP load balancer http proxy/, 443/open/tcp//ssl|http-proxy//F5 BIG-IP load balancer http proxy/	Ignored State: filtered (998)
+# Nmap done at Wed Oct 19 17:34:49 2022 -- 1 IP address (1 host up) scanned in 23.89 seconds

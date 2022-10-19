@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Nessus;
+use App\Http\Controllers\Nmap;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -13,10 +15,16 @@ use App\Http\Controllers\Nessus;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+/*
 Route::get('/', function () {
     return view('welcome');
 });
-Route::get('/nessus', Nessus::class);
+*/
+route::get('/', function () {
+    return view('index');
+});
+Route::post('/nessus', Nessus::class);
+Route::post('/nmap', Nmap::class);
+
 
 

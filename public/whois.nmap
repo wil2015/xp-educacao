@@ -1,0 +1,71 @@
+# Nmap 7.80 scan initiated Wed Oct 19 17:24:16 2022 as: nmap -sV -oA whois -script whois-domain.nse uol.com.br
+Nmap scan report for uol.com.br (200.147.35.149)
+Host is up (0.0071s latency).
+Other addresses for uol.com.br (not scanned): 2804:49c:3102:401:ffff:ffff:ffff:36 2804:49c:3101:401:ffff:ffff:ffff:45
+rDNS record for 200.147.35.149: 200-147-35-149-149.static.uol.com.br
+Not shown: 998 filtered ports
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     F5 BIG-IP load balancer http proxy
+|_http-server-header: BigIP
+443/tcp open  ssl/http-proxy F5 BIG-IP load balancer http proxy
+|_http-server-header: BigIP
+Service Info: Device: load balancer
+
+Host script results:
+| whois-domain: 
+| 
+| Domain name record found at whois.registro.br
+| 
+| % Copyright (c) Nic.br
+| %  The use of the data below is only permitted as described in
+| %  full by the Use and Privacy Policy at https://registro.br/upp ,
+| %  being prohibited its distribution, commercialization or
+| %  reproduction, in particular, to use it for advertising or
+| %  any similar purpose.
+| %  2022-10-19T17:24:34-03:00 - IP: 179.118.186.217
+| 
+| domain:      uol.com.br
+| owner:       Universo Online S.A.
+| ownerid:     01.109.184/0004-38
+| responsible: Contato da Entidade UOL
+| country:     BR
+| owner-c:     CAU12
+| tech-c:      CTU6
+| nserver:     eliot.uol.com.br 200.221.11.98
+| nsstat:      20221017 AA
+| nslastaa:    20221017
+| nserver:     borges.uol.com.br 200.147.255.105
+| nsstat:      20221017 AA
+| nslastaa:    20221017
+| nserver:     charles.uol.com.br 200.147.38.8
+| nsstat:      20221017 AA
+| nslastaa:    20221017
+| created:     19960424 #7137
+| changed:     20170106
+| expires:     20230424
+| status:      published
+| 
+| nic-hdl-br:  CAU12
+| person:      Contato Administrativo - UOL
+| e-mail:      l-registrobr-uol@corp.uol.com.br
+| country:     BR
+| created:     20031202
+| changed:     20200602
+| 
+| nic-hdl-br:  CTU6
+| person:      Contato Tecnico - UOL
+| e-mail:      l-bgp@uoldiveo.com
+| country:     BR
+| created:     20031202
+| changed:     20170106
+| 
+| % Security and mail abuse issues should also be addressed to
+| % cert.br, http://www.cert.br/ , respectivelly to cert@cert.br
+| % and mail-abuse@cert.br
+| %
+| % whois.registro.br accepts only direct match queries. Types
+| % of queries are: domain (.br), registrant (tax ID), ticket,
+|_% provider, CIDR block, IP and ASN.\x0D
+
+Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+# Nmap done at Wed Oct 19 17:24:34 2022 -- 1 IP address (1 host up) scanned in 17.74 seconds
