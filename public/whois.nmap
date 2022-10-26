@@ -1,8 +1,8 @@
-# Nmap 7.80 scan initiated Wed Oct 19 17:24:16 2022 as: nmap -sV -oA whois -script whois-domain.nse uol.com.br
-Nmap scan report for uol.com.br (200.147.35.149)
-Host is up (0.0071s latency).
-Other addresses for uol.com.br (not scanned): 2804:49c:3102:401:ffff:ffff:ffff:36 2804:49c:3101:401:ffff:ffff:ffff:45
-rDNS record for 200.147.35.149: 200-147-35-149-149.static.uol.com.br
+# Nmap 7.80 scan initiated Thu Oct 20 00:36:28 2022 as: nmap -sV -oA whois -script whois-domain.nse uol.com.br
+Nmap scan report for uol.com.br (200.147.3.157)
+Host is up (0.0057s latency).
+Other addresses for uol.com.br (not scanned): 2804:49c:3101:401:ffff:ffff:ffff:45 2804:49c:3102:401:ffff:ffff:ffff:36
+rDNS record for 200.147.3.157: 200-147-3-157-157.static.uol.com.br
 Not shown: 998 filtered ports
 PORT    STATE SERVICE        VERSION
 80/tcp  open  http-proxy     F5 BIG-IP load balancer http proxy
@@ -22,7 +22,7 @@ Host script results:
 | %  being prohibited its distribution, commercialization or
 | %  reproduction, in particular, to use it for advertising or
 | %  any similar purpose.
-| %  2022-10-19T17:24:34-03:00 - IP: 179.118.186.217
+| %  2022-10-20T00:36:47-03:00 - IP: 187.99.101.140
 | 
 | domain:      uol.com.br
 | owner:       Universo Online S.A.
@@ -68,4 +68,4 @@ Host script results:
 |_% provider, CIDR block, IP and ASN.\x0D
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Oct 19 17:24:34 2022 -- 1 IP address (1 host up) scanned in 17.74 seconds
+# Nmap done at Thu Oct 20 00:36:47 2022 -- 1 IP address (1 host up) scanned in 19.37 seconds

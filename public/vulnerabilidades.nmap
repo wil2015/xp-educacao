@@ -1,4 +1,4 @@
-# Nmap 7.80 scan initiated Wed Oct 19 12:14:51 2022 as: nmap -sV -oA vulnerabilidades --script=vulscan --script-args vulscandb=cve.csv --script-args=vulscanoutput=details 127.0.0.1
+# Nmap 7.80 scan initiated Thu Oct 20 00:50:42 2022 as: nmap -sV -oA vulnerabilidades --script=vulscan --script-args vulscandb=cve.csv --script-args=vulscanoutput=details 127.0.0.1
 WARNING: Service 127.0.0.1:9200 had already soft-matched rtsp, but now soft-matched sip; ignoring second value
 Nmap scan report for localhost (127.0.0.1)
 Host is up (0.00011s latency).
@@ -18769,7 +18769,7 @@ PORT     STATE SERVICE     VERSION
 |     "tagline" : "You Know, for Search"
 |   HTTPOptions: 
 |     HTTP/1.0 200 OK
-|     Allow: DELETE,HEAD,GET
+|     Allow: GET,DELETE,HEAD
 |     X-elastic-product: Elasticsearch
 |     content-type: text/plain; charset=UTF-8
 |     content-length: 0
@@ -18781,12 +18781,12 @@ PORT     STATE SERVICE     VERSION
 |_    {"error":{"root_cause":[{"type":"illegal_argument_exception","reason":"Unexpected http protocol version: RTSP/1.0"}],"type":"illegal_argument_exception","reason":"Unexpected http protocol version: RTSP/1.0"},"status":400}
 2 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port5432-TCP:V=7.80%I=7%D=10/19%Time=63501474%P=x86_64-pc-linux-gnu%r(S
+SF-Port5432-TCP:V=7.80%I=7%D=10/20%Time=6350C598%P=x86_64-pc-linux-gnu%r(S
 SF:MBProgNeg,8C,"E\0\0\0\x8bSFATAL\0VFATAL\0C0A000\0Munsupported\x20fronte
 SF:nd\x20protocol\x2065363\.19778:\x20server\x20supports\x202\.0\x20to\x20
 SF:3\.0\0Fpostmaster\.c\0L2127\0RProcessStartupPacket\0\0");
 ==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port9200-TCP:V=7.80%I=7%D=10/19%Time=63501479%P=x86_64-pc-linux-gnu%r(G
+SF-Port9200-TCP:V=7.80%I=7%D=10/20%Time=6350C59D%P=x86_64-pc-linux-gnu%r(G
 SF:etRequest,285,"HTTP/1\.0\x20200\x20OK\r\nX-elastic-product:\x20Elastics
 SF:earch\r\ncontent-type:\x20application/json\r\ncontent-length:\x20539\r\
 SF:n\r\n{\n\x20\x20\"name\"\x20:\x20\"60cf8583ec3c\",\n\x20\x20\"cluster_n
@@ -18801,8 +18801,8 @@ SF:n\x20\x20\x20\x20\"lucene_version\"\x20:\x20\"9\.3\.0\",\n\x20\x20\x20\
 SF:x20\"minimum_wire_compatibility_version\"\x20:\x20\"7\.17\.0\",\n\x20\x
 SF:20\x20\x20\"minimum_index_compatibility_version\"\x20:\x20\"7\.0\.0\"\n
 SF:\x20\x20},\n\x20\x20\"tagline\"\x20:\x20\"You\x20Know,\x20for\x20Search
-SF:\"\n}\n")%r(HTTPOptions,89,"HTTP/1\.0\x20200\x20OK\r\nAllow:\x20DELETE,
-SF:HEAD,GET\r\nX-elastic-product:\x20Elasticsearch\r\ncontent-type:\x20tex
+SF:\"\n}\n")%r(HTTPOptions,89,"HTTP/1\.0\x20200\x20OK\r\nAllow:\x20GET,DEL
+SF:ETE,HEAD\r\nX-elastic-product:\x20Elasticsearch\r\ncontent-type:\x20tex
 SF:t/plain;\x20charset=UTF-8\r\ncontent-length:\x200\r\n\r\n")%r(RTSPReque
 SF:st,15E,"RTSP/1\.0\x20400\x20Bad\x20Request\r\nX-elastic-product:\x20Ela
 SF:sticsearch\r\ncontent-type:\x20application/json;charset=utf-8\r\nconten
@@ -18818,4 +18818,4 @@ SF:%2C/Tri%6Eity\.txt%2ebak\]\x20and\x20method\x20\[GET\],\x20allowed:\x20
 SF:\[POST\]\",\"status\":405}");
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Oct 19 12:18:22 2022 -- 1 IP address (1 host up) scanned in 210.36 seconds
+# Nmap done at Thu Oct 20 00:54:02 2022 -- 1 IP address (1 host up) scanned in 200.40 seconds

@@ -127,8 +127,7 @@
         <button type="submit" class="btn btn-primary mb-3">Executar</button
     </form>
     <br>
-    <a href="http://localhost:9200" class="btn btn-info role="button">Gerencia</a>
-
+    <a href="http://localhost:8000/gerencia.php" class="btn btn-info role="button">Gerencia</a>
 </div>
 <script>
 

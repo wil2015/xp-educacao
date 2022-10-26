@@ -1,419 +1,133 @@
-# Nmap 7.80 scan initiated Wed Oct 19 15:12:49 2022 as: nmap -sV -oA dns --script dns-brute.nse fortinet.com
-Nmap scan report for fortinet.com (52.220.222.172)
-Host is up (0.38s latency).
-Other addresses for fortinet.com (not scanned): 3.1.92.70
-rDNS record for 52.220.222.172: ec2-52-220-222-172.ap-southeast-1.compute.amazonaws.com
-Not shown: 982 filtered ports
-PORT     STATE SERVICE          VERSION
-80/tcp   open  http
-| fingerprint-strings: 
-|   GetRequest: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:17 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-|   HTTPOptions: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:18 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|_    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-81/tcp   open  hosts2-ns?
-| fingerprint-strings: 
-|   GetRequest: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:17 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-|   HTTPOptions: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:18 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|_    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-443/tcp  open  https?
-444/tcp  open  snpp?
-7443/tcp open  oracleas-https?
-7741/tcp open  scriptview?
-8000/tcp open  http-alt
-| fingerprint-strings: 
-|   GenericLines: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:17 2022 GMT
-|     Content-Length: 57042
-|     Connection: close
-|     Content-Type: text/html
-|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-|   GetRequest: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:18 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|_    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-8080/tcp open  http-proxy
-| fingerprint-strings: 
-|   GetRequest: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:17 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-|   HTTPOptions: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:18 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|_    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-8081/tcp open  blackice-icecap?
-8086/tcp open  d-s-n?
-8088/tcp open  radan-http?
-8090/tcp open  opsmessaging?
-8181/tcp open  intermapper?
-8443/tcp open  https-alt?
-8888/tcp open  sun-answerbook?
-| fingerprint-strings: 
-|   GetRequest: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:17 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-|   HTTPOptions: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:18 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|_    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-9080/tcp open  glrpc?
-| fingerprint-strings: 
-|   GenericLines: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:18 2022 GMT
-|     Content-Length: 57042
-|     Connection: close
-|     Content-Type: text/html
-|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-|   GetRequest: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:17 2022 GMT
-|     Content-Length: 57036
-|     Connection: close
-|     Content-Type: text/html
-|_    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-9090/tcp open  zeus-admin?
-9091/tcp open  xmltec-xmlmail?
-| fingerprint-strings: 
-|   drda: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:18 2022 GMT
-|     Content-Length: 57042
-|     Connection: close
-|     Content-Type: text/html
-|     <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-|   informix: 
-|     HTTP/1.1 503 Service Unavailable
-|     Date: Wed Oct 19 18:13:17 2022 GMT
-|     Content-Length: 57042
-|     Connection: close
-|     Content-Type: text/html
-|_    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd"><html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style type="text/css"> html, body { margin: 0; padding: 0; font-family: Verdana, Arial, sans-serif; font-size: 10pt; background-color: #ffffff;} h1, h2 { height: 82px; text-indent: -999em; margin: 0; padding: 0; margin: 0; } div { margin: 0; padding: 0; } div.header { background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM
-7 services unrecognized despite returning data. If you know the service/version, please submit the following fingerprints at https://nmap.org/cgi-bin/submit.cgi?new-service :
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port80-TCP:V=7.80%I=7%D=10/19%Time=63503E3D%P=x86_64-pc-linux-gnu%r(Get
-SF:Request,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x20We
-SF:d\x20Oct\x2019\x2018:13:17\x202022\x20GMT\r\nContent-Length:\x2057036\r
-SF:\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE\x
-SF:20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional//EN\
-SF:"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd\"><
-SF:html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;
-SF:\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x20\x2
-SF:0\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-fami
-SF:ly:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20back
-SF:ground-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20{\x2
-SF:0height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20paddin
-SF:g:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\x20m
-SF:argin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\.hea
-SF:der\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAAAANS
-SF:UhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5
-SF:ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u
-SF:/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM")
-SF:%r(HTTPOptions,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate
-SF::\x20Wed\x20Oct\x2019\x2018:13:18\x202022\x20GMT\r\nContent-Length:\x20
-SF:57036\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DO
-SF:CTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transition
-SF:al//EN\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.
-SF:dtd\"><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"tex
-SF:t/html;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20
-SF:\x20\x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20fo
-SF:nt-family:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\
-SF:x20background-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\
-SF:x20{\x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x2
-SF:0padding:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x2
-SF:0{\x20margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20d
-SF:iv\.header\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGg
-SF:oAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZ
-SF:VJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
-SF:bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG
-SF:1sbnM");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port81-TCP:V=7.80%I=7%D=10/19%Time=63503E3D%P=x86_64-pc-linux-gnu%r(Get
-SF:Request,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x20We
-SF:d\x20Oct\x2019\x2018:13:17\x202022\x20GMT\r\nContent-Length:\x2057036\r
-SF:\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE\x
-SF:20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional//EN\
-SF:"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd\"><
-SF:html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;
-SF:\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x20\x2
-SF:0\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-fami
-SF:ly:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20back
-SF:ground-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20{\x2
-SF:0height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20paddin
-SF:g:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\x20m
-SF:argin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\.hea
-SF:der\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAAAANS
-SF:UhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5
-SF:ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u
-SF:/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM")
-SF:%r(HTTPOptions,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate
-SF::\x20Wed\x20Oct\x2019\x2018:13:18\x202022\x20GMT\r\nContent-Length:\x20
-SF:57036\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DO
-SF:CTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transition
-SF:al//EN\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.
-SF:dtd\"><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"tex
-SF:t/html;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20
-SF:\x20\x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20fo
-SF:nt-family:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\
-SF:x20background-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\
-SF:x20{\x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x2
-SF:0padding:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x2
-SF:0{\x20margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20d
-SF:iv\.header\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGg
-SF:oAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZ
-SF:VJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdp
-SF:bj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG
-SF:1sbnM");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8000-TCP:V=7.80%I=7%D=10/19%Time=63503E3D%P=x86_64-pc-linux-gnu%r(G
-SF:enericLines,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x
-SF:20Wed\x20Oct\x2019\x2018:13:17\x202022\x20GMT\r\nContent-Length:\x20570
-SF:42\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTY
-SF:PE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional/
-SF:/EN\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd
-SF:\"><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/h
-SF:tml;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x2
-SF:0\x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-
-SF:family:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20
-SF:background-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20
-SF:{\x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20pa
-SF:dding:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\
-SF:x20margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\
-SF:.header\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAA
-SF:AANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJl
-SF:YWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0
-SF:i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sb
-SF:nM")%r(GetRequest,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nD
-SF:ate:\x20Wed\x20Oct\x2019\x2018:13:18\x202022\x20GMT\r\nContent-Length:\
-SF:x2057036\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<
-SF:!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transit
-SF:ional//EN\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loos
-SF:e\.dtd\"><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"
-SF:text/html;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\
-SF:x20\x20\x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x2
-SF:0font-family:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010p
-SF:t;\x20background-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20
-SF:h2\x20{\x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;
-SF:\x20padding:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div
-SF:\x20{\x20margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x
-SF:20div\.header\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0
-SF:KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbW
-SF:FnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZ
-SF:Wdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGE
-SF:geG1sbnM");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8080-TCP:V=7.80%I=7%D=10/19%Time=63503E3D%P=x86_64-pc-linux-gnu%r(G
-SF:etRequest,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x20
-SF:Wed\x20Oct\x2019\x2018:13:17\x202022\x20GMT\r\nContent-Length:\x2057036
-SF:\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE
-SF:\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional//E
-SF:N\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd\"
-SF:><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/htm
-SF:l;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x20\
-SF:x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-fa
-SF:mily:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20ba
-SF:ckground-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20{\
-SF:x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20padd
-SF:ing:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\x2
-SF:0margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\.h
-SF:eader\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAAAA
-SF:NSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYW
-SF:R5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i7
-SF:7u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM
-SF:")%r(HTTPOptions,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDa
-SF:te:\x20Wed\x20Oct\x2019\x2018:13:18\x202022\x20GMT\r\nContent-Length:\x
-SF:2057036\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!
-SF:DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transiti
-SF:onal//EN\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose
-SF:\.dtd\"><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"t
-SF:ext/html;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x
-SF:20\x20\x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20
-SF:font-family:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt
-SF:;\x20background-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h
-SF:2\x20{\x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\
-SF:x20padding:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\
-SF:x20{\x20margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x2
-SF:0div\.header\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0K
-SF:GgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWF
-SF:nZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZW
-SF:dpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEg
-SF:eG1sbnM");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port8888-TCP:V=7.80%I=7%D=10/19%Time=63503E3D%P=x86_64-pc-linux-gnu%r(G
-SF:etRequest,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x20
-SF:Wed\x20Oct\x2019\x2018:13:17\x202022\x20GMT\r\nContent-Length:\x2057036
-SF:\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE
-SF:\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional//E
-SF:N\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd\"
-SF:><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/htm
-SF:l;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x20\
-SF:x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-fa
-SF:mily:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20ba
-SF:ckground-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20{\
-SF:x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20padd
-SF:ing:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\x2
-SF:0margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\.h
-SF:eader\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAAAA
-SF:NSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYW
-SF:R5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i7
-SF:7u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM
-SF:")%r(HTTPOptions,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDa
-SF:te:\x20Wed\x20Oct\x2019\x2018:13:18\x202022\x20GMT\r\nContent-Length:\x
-SF:2057036\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!
-SF:DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transiti
-SF:onal//EN\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose
-SF:\.dtd\"><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"t
-SF:ext/html;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x
-SF:20\x20\x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20
-SF:font-family:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt
-SF:;\x20background-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h
-SF:2\x20{\x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\
-SF:x20padding:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\
-SF:x20{\x20margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x2
-SF:0div\.header\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0K
-SF:GgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWF
-SF:nZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZW
-SF:dpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEg
-SF:eG1sbnM");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port9080-TCP:V=7.80%I=7%D=10/19%Time=63503E3D%P=x86_64-pc-linux-gnu%r(G
-SF:etRequest,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x20
-SF:Wed\x20Oct\x2019\x2018:13:17\x202022\x20GMT\r\nContent-Length:\x2057036
-SF:\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE
-SF:\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional//E
-SF:N\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd\"
-SF:><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/htm
-SF:l;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x20\
-SF:x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-fa
-SF:mily:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20ba
-SF:ckground-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20{\
-SF:x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20padd
-SF:ing:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\x2
-SF:0margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\.h
-SF:eader\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAAAA
-SF:NSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYW
-SF:R5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i7
-SF:7u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM
-SF:")%r(GenericLines,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nD
-SF:ate:\x20Wed\x20Oct\x2019\x2018:13:18\x202022\x20GMT\r\nContent-Length:\
-SF:x2057042\r\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<
-SF:!DOCTYPE\x20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transit
-SF:ional//EN\"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loos
-SF:e\.dtd\"><html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"
-SF:text/html;\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\
-SF:x20\x20\x20\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x2
-SF:0font-family:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010p
-SF:t;\x20background-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20
-SF:h2\x20{\x20height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;
-SF:\x20padding:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div
-SF:\x20{\x20margin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x
-SF:20div\.header\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0
-SF:KGgoAAAANSUhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbW
-SF:FnZVJlYWR5ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZ
-SF:Wdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGE
-SF:geG1sbnM");
-==============NEXT SERVICE FINGERPRINT (SUBMIT INDIVIDUALLY)==============
-SF-Port9091-TCP:V=7.80%I=7%D=10/19%Time=63503E3D%P=x86_64-pc-linux-gnu%r(i
-SF:nformix,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x20We
-SF:d\x20Oct\x2019\x2018:13:17\x202022\x20GMT\r\nContent-Length:\x2057042\r
-SF:\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE\x
-SF:20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional//EN\
-SF:"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd\"><
-SF:html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;
-SF:\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x20\x2
-SF:0\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-fami
-SF:ly:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20back
-SF:ground-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20{\x2
-SF:0height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20paddin
-SF:g:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\x20m
-SF:argin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\.hea
-SF:der\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAAAANS
-SF:UhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5
-SF:ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u
-SF:/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM")
-SF:%r(drda,3840,"HTTP/1\.1\x20503\x20Service\x20Unavailable\r\nDate:\x20We
-SF:d\x20Oct\x2019\x2018:13:18\x202022\x20GMT\r\nContent-Length:\x2057042\r
-SF:\nConnection:\x20close\r\nContent-Type:\x20text/html\r\n\r\n<!DOCTYPE\x
-SF:20HTML\x20PUBLIC\x20\"-//W3C//DTD\x20HTML\x204\.01\x20Transitional//EN\
-SF:"\x20\"http://www\.w3c\.org/TR/1999/REC-html401-19991224/loose\.dtd\"><
-SF:html><head><meta\x20http-equiv=\"Content-Type\"\x20content=\"text/html;
-SF:\x20charset=UTF-8\"><style\x20type=\"text/css\">\x20\x20\x20\x20\x20\x2
-SF:0\x20html,\x20body\x20{\x20margin:\x200;\x20padding:\x200;\x20font-fami
-SF:ly:\x20Verdana,\x20Arial,\x20sans-serif;\x20font-size:\x2010pt;\x20back
-SF:ground-color:\x20#ffffff;}\x20\x20\x20\x20\x20\x20\x20h1,\x20h2\x20{\x2
-SF:0height:\x2082px;\x20text-indent:\x20-999em;\x20margin:\x200;\x20paddin
-SF:g:\x200;\x20margin:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\x20{\x20m
-SF:argin:\x200;\x20padding:\x200;\x20}\x20\x20\x20\x20\x20\x20\x20div\.hea
-SF:der\x20{\x20background:\x20url\(data:image/png;base64,iVBORw0KGgoAAAANS
-SF:UhEUgAAAPMAAAFnCAMAAABEqI/sAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5
-SF:ccllPAAAAyFpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u
-SF:/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8\+IDx4OnhtcG1ldGEgeG1sbnM");
+# Nmap 7.80 scan initiated Thu Oct 20 00:39:09 2022 as: nmap -sV -oA dns --script dns-brute.nse uol.com.br
+Nmap scan report for uol.com.br (200.147.3.157)
+Host is up (0.0061s latency).
+Other addresses for uol.com.br (not scanned): 2804:49c:3102:401:ffff:ffff:ffff:36 2804:49c:3101:401:ffff:ffff:ffff:45
+rDNS record for 200.147.3.157: 200-147-3-157-157.static.uol.com.br
+Not shown: 998 filtered ports
+PORT    STATE SERVICE        VERSION
+80/tcp  open  http-proxy     F5 BIG-IP load balancer http proxy
+|_http-server-header: BigIP
+443/tcp open  ssl/http-proxy F5 BIG-IP load balancer http proxy
+|_http-server-header: BigIP
+Service Info: Device: load balancer
 
 Host script results:
 | dns-brute: 
 |   DNS Brute-force hostnames: 
-|     info.fortinet.com - 208.91.114.176
-|     ipv6.fortinet.com - 2620:101:9005:100::8000
-|     download.fortinet.com - 52.217.94.140
-|     ns1.fortinet.com - 65.39.139.161
-|     ns2.fortinet.com - 96.45.36.48
-|     ns3.fortinet.com - 208.91.113.63
-|     mail.fortinet.com - 208.91.113.80
-|     www.fortinet.com - 54.232.39.98
-|     beta.fortinet.com - 154.52.23.133
-|     mail2.fortinet.com - 208.91.113.85
-|     blog.fortinet.com - 96.45.36.159
-|     mail3.fortinet.com - 208.91.113.226
-|     forum.fortinet.com - 13.249.98.11
-|     forum.fortinet.com - 13.249.98.41
-|     forum.fortinet.com - 13.249.98.59
-|     forum.fortinet.com - 13.249.98.7
-|     ftp.fortinet.com - 96.45.36.51
-|     secure.fortinet.com - 142.0.165.134
-|     help.fortinet.com - 154.52.23.148
-|     sip.fortinet.com - 52.112.66.139
-|     sip.fortinet.com - 2603:1037::4:0:0:0:b
-|     smtp.fortinet.com - 208.91.113.81
-|_    demo.fortinet.com - 208.91.114.112
+|     admin.com.br - 200.160.2.95
+|     mx.com.br - 200.160.2.95
+|     host.com.br - 186.202.53.209
+|     stats.com.br - 216.239.32.21
+|     stats.com.br - 216.239.34.21
+|     stats.com.br - 216.239.36.21
+|     stats.com.br - 216.239.38.21
+|     admin.com.br - 2001:12ff::2:0:0:0:95
+|     mx.com.br - 2001:12ff::2:0:0:0:95
+|     http.com.br - 200.160.2.95
+|     http.com.br - 2001:12ff::2:0:0:0:95
+|     ads.com.br - 186.202.135.240
+|     syslog.com.br - 135.148.42.155
+|     id.com.br - 200.160.2.95
+|     mx1.com.br - 162.214.211.130
+|     id.com.br - 2001:12ff::2:0:0:0:95
+|     test.com.br - 200.160.2.95
+|     images.com.br - 23.111.130.138
+|     test.com.br - 2001:12ff::2:0:0:0:95
+|     devtest.com.br - 162.241.203.135
+|     alerts.com.br - 35.186.238.101
+|     dhcp.com.br - 52.42.190.217
+|     testing.com.br - 204.48.30.64
+|     direct.com.br - 23.236.62.147
+|     upload.com.br - 151.106.124.58
+|     dmz.com.br - 192.185.208.33
+|     intra.com.br - 200.160.2.95
+|     intra.com.br - 2001:12ff::2:0:0:0:95
+|     upload.com.br - 2a02:4780:3:576::ae8:3211:1
+|     app.com.br - 200.184.77.202
+|     apps.com.br - 200.201.193.150
+|     vm.com.br - 185.169.98.156
+|     lab.com.br - 200.160.2.95
+|     lab.com.br - 2001:12ff::2:0:0:0:95
+|     appserver.com.br - 192.185.215.37
+|     dns2.com.br - 168.196.189.4
+|     vnc.com.br - 35.247.205.56
+|     local.com.br - 187.45.193.227
+|     log.com.br - 192.185.208.76
+|     beta.com.br - 45.226.81.201
+|     en.com.br - 200.160.2.95
+|     mail.com.br - 200.160.2.95
+|     en.com.br - 2001:12ff::2:0:0:0:95
+|     mail.com.br - 2001:12ff::2:0:0:0:95
+|     erp.com.br - 54.94.177.117
+|     eshop.com.br - 177.67.112.238
+|     exchange.com.br - 104.21.1.242
+|     exchange.com.br - 172.67.152.154
+|     exchange.com.br - 2606:4700:3033::6815:1f2
+|     exchange.com.br - 2606:4700:3037::ac43:989a
+|     f5.com.br - 162.144.45.245
+|     main.com.br - 104.247.81.54
+|     wiki.com.br - 66.228.32.67
+|     manage.com.br - 200.160.2.95
+|     fileserver.com.br - 192.185.222.24
+|     manage.com.br - 2001:12ff::2:0:0:0:95
+|     mgmt.com.br - 191.6.209.226
+|     mgmt.com.br - 2804:10:8001::209:226
+|     www2.com.br - 104.21.41.232
+|     www2.com.br - 172.67.195.223
+|     mirror.com.br - 200.160.2.95
+|     www2.com.br - 2606:4700:3031::ac43:c3df
+|     www2.com.br - 2606:4700:3037::6815:29e8
+|     mirror.com.br - 2001:12ff::2:0:0:0:95
+|     news.com.br - 216.172.171.56
+|     monitor.com.br - 186.202.157.79
+|     noc.com.br - 3.64.163.50
+|     mta.com.br - 104.21.64.214
+|     mta.com.br - 172.67.187.225
+|     mta.com.br - 2606:4700:3031::ac43:bbe1
+|     mta.com.br - 2606:4700:3032::6815:40d6
+|     ns.com.br - 108.167.169.51
+|     ns1.com.br - 200.160.2.95
+|     ns1.com.br - 2001:12ff::2:0:0:0:95
+|     ns2.com.br - 200.160.2.95
+|     ns2.com.br - 2001:12ff::2:0:0:0:95
+|     ns3.com.br - 177.67.112.238
+|     ntp.com.br - 186.202.153.32
+|     ops.com.br - 162.214.78.41
+|     oracle.com.br - 23.5.38.36
+|     oracle.com.br - 2600:1419:d000:585::8b5
+|     oracle.com.br - 2600:1419:d000:58d::8b5
+|     owa.com.br - 81.92.80.55
+|     owa.com.br - 81.92.80.56
+|     forum.com.br - 20.85.52.51
+|     ftp.com.br - 177.54.148.122
+|     server.com.br - 64.90.40.171
+|     git.com.br - 34.105.78.222
+|     gw.com.br - 186.202.153.183
+|     help.com.br - 108.139.182.100
+|     help.com.br - 108.139.182.30
+|     help.com.br - 108.139.182.44
+|     help.com.br - 108.139.182.87
+|     shop.com.br - 127.0.0.1
+|     helpdesk.com.br - 191.252.51.217
+|     sip.com.br - 177.234.144.114
+|     home.com.br - 74.208.236.4
+|     smtp.com.br - 177.70.14.19
+|     sql.com.br - 10.10.2.198
+|     sql.com.br - 192.168.0.200
+|     sql.com.br - 192.168.0.89
+|     ssh.com.br - 67.225.178.86
+|     cdn.com.br - 151.106.96.145
+|     chat.com.br - 66.96.149.1
+|     stage.com.br - 186.226.56.95
+|     citrix.com.br - 54.86.126.30
+|     cms.com.br - 185.176.43.80
+|     corp.com.br - 191.252.4.20
+|     crs.com.br - 100.24.95.202
+|     cvs.com.br - 162.241.98.181
+|     database.com.br - 217.79.255.54
+|     db.com.br - 65.21.235.165
+|     demo.com.br - 67.23.238.123
+|_    dev.com.br - 185.199.110.153
 
 Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
-# Nmap done at Wed Oct 19 15:16:33 2022 -- 1 IP address (1 host up) scanned in 223.85 seconds
+# Nmap done at Thu Oct 20 00:39:52 2022 -- 1 IP address (1 host up) scanned in 42.83 seconds

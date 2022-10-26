@@ -1,4 +1,4 @@
-# Nmap 7.80 scan initiated Wed Oct 19 15:12:49 2022 as: nmap -sV -oA dns --script dns-brute.nse fortinet.com
-Host: 52.220.222.172 (ec2-52-220-222-172.ap-southeast-1.compute.amazonaws.com)	Status: Up
-Host: 52.220.222.172 (ec2-52-220-222-172.ap-southeast-1.compute.amazonaws.com)	Ports: 80/open/tcp//http///, 81/open/tcp//hosts2-ns?///, 443/open/tcp//https?///, 444/open/tcp//snpp?///, 7443/open/tcp//oracleas-https?///, 7741/open/tcp//scriptview?///, 8000/open/tcp//http-alt///, 8080/open/tcp//http-proxy///, 8081/open/tcp//blackice-icecap?///, 8086/open/tcp//d-s-n?///, 8088/open/tcp//radan-http?///, 8090/open/tcp//opsmessaging?///, 8181/open/tcp//intermapper?///, 8443/open/tcp//https-alt?///, 8888/open/tcp//sun-answerbook?///, 9080/open/tcp//glrpc?///, 9090/open/tcp//zeus-admin?///, 9091/open/tcp//xmltec-xmlmail?///	Ignored State: filtered (982)
-# Nmap done at Wed Oct 19 15:16:33 2022 -- 1 IP address (1 host up) scanned in 223.85 seconds
+# Nmap 7.80 scan initiated Thu Oct 20 00:39:09 2022 as: nmap -sV -oA dns --script dns-brute.nse uol.com.br
+Host: 200.147.3.157 (200-147-3-157-157.static.uol.com.br)	Status: Up
+Host: 200.147.3.157 (200-147-3-157-157.static.uol.com.br)	Ports: 80/open/tcp//http-proxy//F5 BIG-IP load balancer http proxy/, 443/open/tcp//ssl|http-proxy//F5 BIG-IP load balancer http proxy/	Ignored State: filtered (998)
+# Nmap done at Thu Oct 20 00:39:52 2022 -- 1 IP address (1 host up) scanned in 42.83 seconds

@@ -1,4 +1,4 @@
-# Nmap 7.80 scan initiated Wed Oct 19 17:23:26 2022 as: nmap -sV -oA metodos_http --script http-methods uol.com.br
-Host: 200.147.35.149 (200-147-35-149-149.static.uol.com.br)	Status: Up
-Host: 200.147.35.149 (200-147-35-149-149.static.uol.com.br)	Ports: 80/open/tcp//http-proxy//F5 BIG-IP load balancer http proxy/, 443/open/tcp//ssl|http-proxy//F5 BIG-IP load balancer http proxy/	Ignored State: filtered (998)
-# Nmap done at Wed Oct 19 17:23:44 2022 -- 1 IP address (1 host up) scanned in 17.44 seconds
+# Nmap 7.80 scan initiated Thu Oct 20 13:58:42 2022 as: nmap -sV -oA metodos_http --script http-methods uol.com.br
+Host: 200.147.3.157 (200-147-3-157-157.static.uol.com.br)	Status: Up
+Host: 200.147.3.157 (200-147-3-157-157.static.uol.com.br)	Ports: 80/open/tcp//http-proxy//F5 BIG-IP load balancer http proxy/, 443/open/tcp//ssl|http-proxy//F5 BIG-IP load balancer http proxy/	Ignored State: filtered (998)
+# Nmap done at Thu Oct 20 13:59:01 2022 -- 1 IP address (1 host up) scanned in 18.73 seconds
